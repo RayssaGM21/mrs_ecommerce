@@ -1,13 +1,13 @@
 <template>
   <div class="p-6 max-w-6xl mx-auto min-h-[90vh]">
-    <h1 class="text-3xl font-bold mb-6 text-[#c5a2a6] flex items-center gap-2">
-      <ShoppingCartIcon class="w-8 h-8" />
-      Meu Carrinho
+    <h1 class="text-3xl font-bold mb-6 text-[#c5a2a6] flex items-center gap-2 mt-[50px]">
+      <ShoppingBagIcon class="w-8 h-8" />
+      Meus Pedidos
     </h1>
 
     <div v-if="cart.items.length === 0" class="text-gray-500 flex items-center gap-2 justify-center h-[50vh]">
       <ExclamationCircleIcon class="w-8 h-8 text-[#c5a2a6]" />
-      Seu carrinho está vazio.
+      Sua sacola está vazia.
     </div>
 
     <div v-else class="flex flex-col md:flex-row gap-8">
@@ -94,7 +94,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { cart } from '../store/cart'
-import { PlusIcon, MinusIcon, ShoppingCartIcon, TrashIcon, ExclamationCircleIcon } from '@heroicons/vue/24/outline'
+import { PlusIcon, MinusIcon, ShoppingBagIcon, TrashIcon, ExclamationCircleIcon } from '@heroicons/vue/24/outline'
 
 const cupom = ref('')
 
