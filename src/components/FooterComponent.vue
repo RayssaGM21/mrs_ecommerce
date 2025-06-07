@@ -96,7 +96,7 @@
         <hr class="my-8 border-[#a8776c]" />
 
         <div class="flex flex-col items-center text-center md:flex-row md:justify-between md:text-left">
-          <span class="mb-4 text-base font-bold text-white md:mb-0">©2025 MRS Beauty. Todos os direitos
+          <span class="mb-4 text-base font-bold text-white md:mb-0">© 2025 MRS Beauty. Todos os direitos
             reservados.</span>
 
           <div class="flex space-x-5 rtl:space-x-reverse">

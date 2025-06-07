@@ -36,12 +36,12 @@
   </div>
 
   <!-- Paginação -->
-  <div class="flex justify-center mt-4 gap-2">
-    <button @click="prevPage" :disabled="page === 1" class="px-2 py-1 border rounded disabled:opacity-50">
+  <div class="flex justify-center mt-10 mb-10 gap-2">
+    <button @click="prevPage" :disabled="page === 1" class="px-2 py-1 text-white font-bold border rounded disabled:opacity-50 bg-[#c5a2a6]">
       Anterior
     </button>
-    <span>Página {{ page }}</span>
-    <button @click="nextPage" class="px-2 py-1 border rounded">
+    <span class="text-[16px] text-gray-800 font-bold mt-1">Página {{ page }}</span>
+    <button @click="nextPage" class="px-2 py-1 text-white font-bold border rounded bg-[#c5a2a6]">
       Próxima
     </button>
   </div>

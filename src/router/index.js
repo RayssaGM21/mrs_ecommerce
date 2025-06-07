@@ -9,7 +9,7 @@ const routes = [
   { path: '/product/:id', name: 'ProductDetails', component: ProductDetails },
   { path: '/cart', name: 'Cart', component: Cart },
   { path: '/produtos', name: 'ProductsListView', component: ProductsListView },
-   { path: '/about', name: 'About', component: () => import('../views/About.vue') },
+   { path: '/contact', name: 'Contact', component: () => import('../views/Contact.vue') },
 ]
 
 const router = createRouter({
