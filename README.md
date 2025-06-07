@@ -1,29 +1,50 @@
-# mrs_ecommerce
+# 🛒 MRS E-commerce
 
-This template should help get you started developing with Vue 3 in Vite.
+## 💡 Sobre o Sistema: 
 
-## Recommended IDE Setup
+Este é um projeto de e-commerce desenvolvido como parte de uma atividade prática acadêmica. A aplicação simula uma loja virtual moderna e responsiva, com o objetivo de proporcionar uma experiência básica de navegação e compra de produtos.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de desenvolvimento front-end e organização de componentes. O foco principal do projeto é a exibição de produtos, filtragem por categorias, visualização de detalhes individuais e gerenciamento de um carrinho de compras interativo.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 👥 Integrantes
 
-## Project Setup
+* Maisa Amaral - RA: 1997058
+* Rayssa Marconato - RA: 2001130
+* Samara Adorno - RA: 2001639
 
-```sh
-npm install
-```
+---
 
-### Compile and Hot-Reload for Development
+## 🚀 Funcionalidades
 
-```sh
-npm run dev
-```
+- Listagem de produtos
+- Visualização dos detalhes de cada produto
+- Adição e remoção de itens do carrinho
+- Navegação entre diferentes categorias
+- Filtro e ordenação de produtos
+- Responsividade para dispositivos móveis
 
-### Compile and Minify for Production
+## 🛠️ Tecnologias Utilizadas
 
-```sh
-npm run build
-```
+- [Vue.js 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- HTML, CSS, JavaScript
+
+## 📦 Instalação e Execução Local
+
+### Pré-requisitos
+
+Certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/en/) (versão 14 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+## 🎥 Demonstração em Vídeo
+
+Confira o vídeo no YouTube demonstrando o funcionamento do sistema:
+
+👉 <!-- link do video  -->
+
+## 🖼️ Print das telas:
+
