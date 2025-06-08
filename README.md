@@ -48,17 +48,17 @@ npm -v
 - Clone o repositório (https://github.com/RayssaGM21/mrs_ecommerce.git) na sua máquina
 - Na parte superior onde fica o nome da pasta em que o projeto está inserido na máquina, clique duas vezes e escreva "cmd", assessando o terminal da máquina
 
-  ## 3. Acessar a pasta do projeto
-  - Ao acessar o terminal da máquina, acesse o projeto por meio do comando cd mrs_ecommerce por meio do atalho do teclado Tab
+## 3. Acessar a pasta do projeto
+- Ao acessar o terminal da máquina, acesse o projeto por meio do comando cd mrs_ecommerce por meio do atalho do teclado Tab
  
-    ## 4. Instalar as dependências
-    - Instale as dependências do projeto por meio do comando npm install
+## 4. Instalar as dependências
+- Instale as dependências do projeto por meio do comando npm install
    
-    ## 5. Instalar o Axios
-    - Instale o Axios por meio do comando npm install axios
+## 5. Instalar o Axios
+- Instale o Axios por meio do comando npm install axios
 
-    ## 6. Rodar o projeto
-    - Por fim, para rodar o projeto no navegador, insira o comando npm run dev
+## 6. Rodar o projeto
+- Por fim, para rodar o projeto no navegador, insira o comando npm run dev
 
 ## 🎥 Demonstração em Vídeo
 
