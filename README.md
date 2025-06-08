@@ -29,7 +29,10 @@ O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de d
 
 - [Vue.js 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
-- HTML, CSS, JavaScript
+- HTML
+- Tailwind CSS
+- JavaScript
+  
 
 ## 📦 Instalação e Execução Local
 
