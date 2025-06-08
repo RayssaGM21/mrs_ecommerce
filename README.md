@@ -64,7 +64,9 @@ O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de d
 
 Confira o vídeo no YouTube demonstrando o funcionamento do sistema:
 
-👉 <!-- link do video  -->
+[![Vídeo de demonstração](https://img.youtube.com/vi/g2iXzvxlCm0/0.jpg)](https://youtu.be/g2iXzvxlCm0)
+
+---
 
 ## 🖼️ Print das telas:
 ![Print Tela 30](./src/assets/prints/30.png)
