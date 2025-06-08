@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div
-      class="mt-70 h-9 bg-[#c5a2a6] shadow-lg border-t-3 border-gray-200 text-md lg:text-base lg:h-11 text-white font-semibold relative">
+      class="mt-70 h-9 bg-[#c5a2a6] shadow-lg border-t-3 border-gray-200 text-md lg:text-base lg:h-11 text-white font-semibold relative z-1">
       <a href="#" id="voltar" class="flex gap-3 p-2 lg:p-2 justify-center">
         <p class="text-[18px]">Voltar para o início</p>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"

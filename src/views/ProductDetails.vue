@@ -1,8 +1,8 @@
 <template>
     <div class="p-6 max-w-6xl mx-auto mt-[60px]">
-        <!-- Topo -->
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Imagens -->
+
             <div>
                 <img :src="activeImage" class="w-full h-80 object-contain rounded-2xl shadow-sm mb-4" />
                 <div class="flex gap-2 overflow-x-auto">
@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <!-- Informações principais -->
+
             <div>
                 <h1 class="text-3xl font-bold text-[#c5a2a6] mb-2">{{ product.title }}</h1>
                 <p class="text-sm text-gray-500 mb-4">{{ product.brand }} • SKU: {{ product.sku }}</p>
@@ -34,7 +34,7 @@
 
                 <p class="text-gray-700 mb-4">{{ product.description }}</p>
 
-                <!-- Preço e desconto -->
+
                 <div class="mb-6">
                     <div class="flex items-center gap-2">
                         <span class="text-3xl font-bold text-[#c5a2a6]">R$ {{ discountedPrice }}</span>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                <!-- Estoque e status -->
+
                 <p class="mb-2 text-sm text-gray-600">
                     <strong>Status:</strong> {{ product.availabilityStatus }}
                 </p>
@@ -56,22 +56,7 @@
                     <strong>Estoque:</strong> {{ product.stock }} unidades
                 </p>
 
-                <div class="flex items-center gap-2">
-                  <button @click="product.quantity = Math.max(1, product.quantity - 1)" :disabled="product.quantity <= 1"
-                    class="p-1 rounded-full hover:bg-[#c5a2a6]/10 transition disabled:opacity-50 disabled:cursor-not-allowed">
-                    <MinusIcon class="w-5 h-5 text-[#c5a2a6]" />
-                  </button>
 
-                  <input type="number" v-model.number="product.quantity" :min="1" :max="product.stock"
-                    @change="validateQuantity(product)"
-                    class="w-16 border border-gray-300 rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#c5a2a6]" />
-
-                  <button @click="product.quantity = Math.min(product.stock, product.quantity + 1)"
-                    :disabled="product.quantity >= product.stock"
-                    class="p-1 rounded-full hover:bg-[#c5a2a6]/10 transition disabled:opacity-50 disabled:cursor-not-allowed">
-                    <PlusIcon class="w-5 h-5 text-[#c5a2a6]" />
-                  </button>
-                </div>
                 <button class="w-full bg-[#c5a2a6] text-white px-4 py-3 mt-5 rounded-xl hover:bg-[#b28f92] transition"
                     @click="addToCartHandler()">
                     Adicionar ao Carrinho
@@ -111,18 +96,11 @@
                 </ul>
             </div>
 
-            <!-- QR Code -->
-            <div v-if="product.meta && product.meta.qrCode" class="mt-4">
-                <img :src="product.meta.qrCode" alt="QR Code" class="w-32 h-32 object-contain" />
-            </div>
-            <div v-else class="mt-4 text-gray-500">QR Code indisponível</div>
-
         </div>
 
-        <!-- Avaliações -->
+
         <div class="mt-10">
             <h2 class="text-xl font-bold text-[#c5a2a6] mb-4">Avaliações</h2>
-            <!-- <h2 class="text-3xl font-extrabold text-[#c5a2a6] mb-8 tracking-wide">Avaliações</h2> -->
             <div v-if="product.reviews && product.reviews.length > 0" class="space-y-8">
                 <div v-for="(review, index) in product.reviews" :key="index"
                     class="bg-white border border-gray-200 rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -167,7 +145,6 @@ function addToCartHandler() {
   cart.addToCart({ ...product.value, quantity: product.value.quantity })
 }
 
-
 onMounted(async () => {
     const { data } = await getProductById(route.params.id)
     product.value = data
@@ -181,15 +158,4 @@ const discountedPrice = computed(() => {
     return (product.value.price - discount).toFixed(2)
 })
 
-import { PlusIcon, MinusIcon } from '@heroicons/vue/24/outline'
-
-function validateQuantity(item) {
-  if (item.quantity < 1) {
-    item.quantity = 1
-  }
-  if (item.quantity > item.stock) {
-    item.quantity = item.stock
-    alert('Quantidade ajustada ao limite do estoque disponível!')
-  }
-}
 </script>

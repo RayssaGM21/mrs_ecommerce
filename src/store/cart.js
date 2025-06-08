@@ -1,4 +1,5 @@
 import { reactive } from 'vue'
+import { showAlert } from '../services/alert'
 
 export const cart = reactive({
   items: [],
@@ -6,21 +7,25 @@ export const cart = reactive({
   addToCart(product, quantity = 1) {
     const item = cart.items.find(i => i.id === product.id)
     const availableStock = product.stock
-
-    if (item) {
-      const newQuantity = item.quantity + quantity
-      if (newQuantity <= availableStock) {
-        item.quantity = newQuantity
+    try {
+      if (item) {
+        const newQuantity = item.quantity + quantity
+        if (newQuantity <= availableStock) {
+          item.quantity = newQuantity
+        } else {
+          item.quantity = availableStock
+          showAlert('Quantidade ajustada ao limite do estoque disponível!', 'warning')
+        }
       } else {
-        item.quantity = availableStock
-        alert('Quantidade ajustada ao limite do estoque disponível!')
+        const addedQuantity = quantity <= availableStock ? quantity : availableStock
+        cart.items.push({ ...product, quantity: addedQuantity })
+        if (quantity > availableStock) {
+          showAlert('Quantidade ajustada ao limite do estoque disponível!', 'warning')
+        }
       }
-    } else {
-      const addedQuantity = quantity <= availableStock ? quantity : availableStock
-      cart.items.push({ ...product, quantity: addedQuantity })
-      if (quantity > availableStock) {
-        alert('Quantidade ajustada ao limite do estoque disponível!')
-      }
+    }
+    finally{
+      showAlert(`Produto ${product.title} adicionado na sacola com sucesso!!`)
     }
   },
 
@@ -37,7 +42,7 @@ export const cart = reactive({
         item.quantity = quantity
       } else {
         item.quantity = item.stock
-        alert('Quantidade ajustada ao estoque disponível!')
+        showAlert('Quantidade ajustada ao limite do estoque disponível!', 'warning')
       }
     }
   },

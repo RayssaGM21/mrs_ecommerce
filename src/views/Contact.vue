@@ -6,40 +6,60 @@
       <div class="bg-white rounded-lg shadow-xl p-8 mb-12">
         <h2 class="text-2xl font-bold text-[#c5a2a6] mb-6 text-center">Fale Conosco</h2>
 
-        <form action="#" method="POST" class="space-y-6">
+        <form @submit.prevent="handleSubmit" class="space-y-6">
           <div>
             <label for="name" class="block text-gray-700 text-md font-bold mb-2">Nome Completo:</label>
-            <input type="text" id="name" name="name" required
+            <input type="text" id="name" name="name" v-model="name" required
               class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#c5a2a6] focus:border-transparent transition duration-200"
               placeholder="Seu nome" />
           </div>
           <div>
             <label for="email" class="block text-gray-700 text-md font-bold mb-2">Email:</label>
-            <input type="email" id="email" name="email" required
+            <input type="email" id="email" name="email" v-model="email" required
               class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#c5a2a6] focus:border-transparent transition duration-200"
               placeholder="seu.email@exemplo.com" />
           </div>
           <div>
             <label for="subject" class="block text-gray-700 text-md font-bold mb-2">Assunto:</label>
-            <input type="text" id="subject" name="subject"
+            <input type="text" id="subject" name="subject" v-model="subject"
               class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#c5a2a6] focus:border-transparent transition duration-200"
               placeholder="Sobre o que é a mensagem?" />
           </div>
           <div>
             <label for="message" class="block text-gray-700 text-md font-bold mb-2">Mensagem:</label>
-            <textarea id="message" name="message" rows="6" required
+            <textarea id="message" name="message" rows="6" required v-model="message"
               class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#c5a2a6] focus:border-transparent transition duration-200"
               placeholder="Escreva sua mensagem aqui..."></textarea>
           </div>
           <div class="text-center">
-            <button type="submit"
+            <button
+              type="submit"
               class="bg-[#c5a2a6] text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105">
               Enviar Mensagem
             </button>
           </div>
         </form>
       </div>
-
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+import { showAlert } from '../services/alert.js'
+
+const name = ref('')
+const email = ref('')
+const subject = ref('')
+const message = ref('')
+
+function handleSubmit() {
+  showAlert('Mensagem enviada com sucesso! Obrigada pelo contato!')
+
+  name.value = ''
+  email.value = ''
+  subject.value = ''
+  message.value = ''
+}
+</script>
+
