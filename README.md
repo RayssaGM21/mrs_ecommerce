@@ -34,14 +34,17 @@ O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de d
 - JavaScript
   
 
-## 📦 Instalação e Execução Local
+## 📦 Instruções para rodar a aplicação localmente 
 
-### Pré-requisitos
+### Instalação  
+## 1. Instalar o Node.js
+- Baixe e instale: https://nodejs.org/
+- 
 
-Certifique-se de ter instalado:
-
+### Execução Local
 - [Node.js](https://nodejs.org/en/) (versão 14 ou superior)
 - [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- 
 
 ## 🎥 Demonstração em Vídeo
 
