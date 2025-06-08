@@ -54,10 +54,7 @@ O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de d
 ## 4. Instalar as dependências
 - Instale as dependências do projeto por meio do comando npm install
    
-## 5. Instalar o Axios
-- Instale o Axios por meio do comando npm install axios
-
-## 6. Rodar o projeto
+## 5. Rodar o projeto
 - Por fim, para rodar o projeto no navegador, insira o comando npm run dev
 
 ## 🎥 Demonstração em Vídeo
