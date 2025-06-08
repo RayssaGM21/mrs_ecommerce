@@ -2,9 +2,18 @@
 
 ## 💡 Sobre o Sistema: 
 
-Este é um projeto de e-commerce desenvolvido como parte de uma atividade prática acadêmica. A aplicação simula uma loja virtual moderna e responsiva, com o objetivo de proporcionar uma experiência básica de navegação e compra de produtos.
+Este é o MRS Beauty, um projeto de e-commerce criado para simular uma experiência de compra online moderna, fluida e responsiva — ideal para quem valoriza praticidade, design e boa navegação.
 
-O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de desenvolvimento front-end e organização de componentes. O foco principal do projeto é a exibição de produtos, filtragem por categorias, visualização de detalhes individuais e gerenciamento de um carrinho de compras interativo.
+Desenvolvido com Vue.js e Vite, o sistema foi estruturado com foco em performance, organização de componentes e boas práticas de front-end. A proposta é oferecer uma vitrine digital elegante, com funcionalidades que permitem:
+
+🛍️ Navegação por categorias
+🔍 Busca em tempo real
+🧾 Visualização completa dos produtos
+🛒 Gerenciamento inteligente do carrinho de compras
+
+Tudo isso em um layout responsivo e intuitivo, pensado para funcionar perfeitamente em qualquer dispositivo — seja desktop ou mobile.
+
+Mais do que um exercício acadêmico, o MRS Beauty é uma demonstração prática de como tecnologia, usabilidade e estética podem andar juntas em uma loja virtual.
 
 ---
 
