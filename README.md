@@ -40,8 +40,8 @@ O sistema foi construído utilizando Vue.js e Vite, adotando boas práticas de d
 ## 1. Instalar o Node.js
 - Baixe e instale: (https://nodejs.org/). (versão 14 ou superior)
 - Verifique a instalação:
-node -v
-npm -v
+- node -v
+- npm -v
 
 ### Execução Local
 ## 2. Clonar o repositório 
