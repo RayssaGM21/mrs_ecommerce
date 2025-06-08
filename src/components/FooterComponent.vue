@@ -17,40 +17,63 @@
         <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div>
             <h2 class="mb-4 text-lg font-bold uppercase text-[#8c5957]">
-              Company
+              Mapa do Site
             </h2>
             <ul class="space-y-2 text-base font-semibold text-white">
               <li>
-                <a href="#" class="hover:text-[#6f4236]">About</a>
+                <a href="/" class="hover:text-[#6f4236]">Início</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Careers</a>
+                <a href="/produtos" class="hover:text-[#6f4236]">Produtos</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Brand Center</a>
+                <a href="/contact" class="hover:text-[#6f4236]">Contato</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Blog</a>
+                <a href="/cart" class="hover:text-[#6f4236]">Carrinho de compras</a>
               </li>
             </ul>
           </div>
 
           <div>
             <h2 class="mb-4 text-lg font-bold uppercase text-[#8c5957]">
-              Help center
+              Informações de Contato
             </h2>
             <ul class="space-y-2 text-base font-semibold text-white">
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Discord Server</a>
+                <span href="#" class="font-bold text-gray-900">📍 <strong>Endereço:</strong>
+                  <br>
+                  Av. das Esmeraldas, 821 - Jardim Tangara, Marília - SP, 17516-000</span>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Twitter</a>
+                <span href="#" class="font-bold text-gray-900">📞 <strong>Telefone/WhatsApp:</strong>
+                  <br>
+                  (14) 91234-5678</span>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Facebook</a>
+                <span href="#" class="font-bold text-gray-900">📧 <strong>E-mail de atendimento:</strong>
+                  <br>
+                  contato@mrsbeauty.com.br</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-4 text-lg font-bold uppercase text-[#8c5957]">
+              Central de Atendimento
+            </h2>
+            <ul class="space-y-2 text-base font-semibold text-white">
+              <li>
+                <a href="#" class="hover:text-[#6f4236]">Trocas e Devoluções</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#6f4236]">Contact Us</a>
+                <a href="#" class="hover:text-[#6f4236]">Rastreamento de Pedido</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#6f4236]">Perguntas Frequentes (FAQ)</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#6f4236]">Política de Frete</a>
               </li>
             </ul>
           </div>
@@ -72,25 +95,6 @@
             </ul>
           </div>
 
-          <div>
-            <h2 class="mb-4 text-lg font-bold uppercase text-[#8c5957]">
-              Download
-            </h2>
-            <ul class="space-y-2 text-base font-semibold text-white">
-              <li>
-                <a href="#" class="hover:text-[#6f4236]">iOS</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#6f4236]">Android</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#6f4236]">Windows</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-[#6f4236]">MacOS</a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <hr class="my-8 border-[#a8776c]" />
